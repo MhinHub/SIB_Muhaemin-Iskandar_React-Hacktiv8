@@ -61,7 +61,7 @@ dll */
 console.info(array3);
 
     // Menghapus Array
-array1.splice(0, 3); // Menghapus array1 pada index 0 dan 1
+array1.splice(0, 3); // Menghapus array1 pada index 0 sampai 3
 
 console.info(array1);
 
