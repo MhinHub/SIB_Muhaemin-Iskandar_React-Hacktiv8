@@ -1,0 +1,18 @@
+{
+    "devDependencies": {
+        "colors": "^1.1.2",
+        "node-fetch": "^1.7.3",
+        "nodemon": "^1.18.4"
+    },
+    "type": "module",
+    "name": "sesi-03",
+    "description": "",
+    "version": "1.0.0",
+    "main": "class.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
