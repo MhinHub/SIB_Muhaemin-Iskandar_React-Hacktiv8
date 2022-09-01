@@ -1,4 +1,4 @@
-// Percobaan React menggunakan CDN
+// Karena hanya ingin mencoba menginstal jadi saya menggunakan React menggunakan CDN
 
 // function App() {
 //     return (
