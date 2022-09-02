@@ -89,34 +89,34 @@
 
     ```js
     class propsDemo extends Component {
-            constructor(props) {
-                super(props)
-                this.state = {
-                    people: [
-                        {name: 'John', age: 20},
-                        {name: 'Jane', age: 21},
-                        {name: 'Bob', age: 22},
-                    ]
-                }
-            }
-            render() {
-                return (
-                        <People = {this.state.people} />
-                )
+        constructor() {
+            super()
+            this.state = {
+                people: [
+                    {name: 'John', age: 20},
+                    {name: 'Jane', age: 21},
+                    {name: 'Bob', age: 22},
+                ]
             }
         }
+        render() {
+            return (
+                <People = {this.state.people} />
+            )
+        }
+    }
     class People extends Component {
-            constructor(props) {
-                super(props)
-            }
-            render() {
-                return (
-                    <ul>
-                        {this.props.people(() => <li>{name} - {age}</li>)}
-                    </ul>
-                )
-            }
+        constructor(props) {
+            super(props)
         }
+        render() {
+                return (
+                <ul>
+                    {this.props.people.map(() => <li>{name} - {age}</li>)}
+                </ul>
+            )
+        }
+    }
     
     // Bisa dengan menggunakan function
 
