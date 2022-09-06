@@ -1,3 +1,7 @@
 [submodule "Sesi-02/assignment-1_calc"]
 	path = Sesi-02/assignment-1_calc
 	url = https://github.com/MhinHub/Calc-Hacktiv8
+
+[submodule "Sesi-05/Qtemu_home-work_RCTN-Hacktiv8"]
+	path = Sesi-05/Qtemu_home-work_RCTN-Hacktiv8
+	url = https://github.com/MhinHub/Qtemu-Hacktiv8
