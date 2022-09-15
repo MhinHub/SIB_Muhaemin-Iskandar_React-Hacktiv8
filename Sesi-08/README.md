@@ -130,4 +130,4 @@ function App() {
 ## UI Frameworks
 
 ### Contoh dengan Bootstrap
-[Open folder](./template/vision-ui-dashboard_MUI/)
+[Open folder](./UI-framework/)
