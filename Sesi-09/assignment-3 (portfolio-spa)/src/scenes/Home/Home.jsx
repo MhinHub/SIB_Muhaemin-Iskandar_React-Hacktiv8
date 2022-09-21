@@ -1,3 +1,4 @@
+import React from 'react';
 import MainSection from './MainSection/MainSection';
 import IntroSection from './IntroSection/IntroSection';
 import HomeLayout from '../../layouts/HomeLayout/HomeLayout';

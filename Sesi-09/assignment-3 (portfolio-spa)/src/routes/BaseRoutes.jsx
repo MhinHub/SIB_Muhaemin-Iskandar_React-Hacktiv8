@@ -41,7 +41,7 @@ const BaseRoutes = () => {
         <Route path={routes.EXPERIENCE} element={<Experience />} />
         <Route path={routes.INTEREST} element={<Interest  />} />
         <Route path={routes.AWARDS} element={<Awards />} />
-        <Route path="*" element={<Home />} />      
+        {/* <Route path="*" element={<Home />} />       */}
       </Routes>
 
       {/* {background && (

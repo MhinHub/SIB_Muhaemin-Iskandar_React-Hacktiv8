@@ -19,13 +19,13 @@ const Experience = () => {
                                 <strong>Fullstack Developer - Virtual Internship Experience</strong>
                                 <span className={s.purple}>Investree</span>
                             </div>
-                            <p>
-                                <ul>
-                                    <li>Learning Problem Solving</li>
-                                    <li>Learnig Restful API</li>
-                                    <li>Using Laravel</li>
-                                </ul>
-                            </p>
+
+                            <ul>
+                                <li>Learning Problem Solving</li>
+                                <li>Learnig Restful API</li>
+                                <li>Using Laravel</li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
@@ -39,12 +39,12 @@ const Experience = () => {
                                 <strong>UI/UX Designer - Virtual Internship Experience</strong>
                                 <span className={s.purple}>Niagahoster</span>
                             </div>
-                            <p>
-                                <ul>
-                                    <li>Learning Fundamentals of UI/UX Design</li>
-                                    <li>Design and Research Checkout Page</li>
-                                </ul>
-                            </p>
+
+                            <ul>
+                                <li>Learning Fundamentals of UI/UX Design</li>
+                                <li>Design and Research Checkout Page</li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
@@ -58,16 +58,16 @@ const Experience = () => {
                                 <strong>Participant as Hacker</strong>
                                 <span className={s.purple}>1000 Startup Digital</span>
                             </div>
-                            <p>
-                                <ul>
-                                    <li>Developing and maintaining web application</li>
-                                    <li>Designing and research for own startup</li>
-                                </ul>
-                            </p>
+
+                            <ul>
+                                <li>Developing and maintaining web application</li>
+                                <li>Designing and research for own startup</li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </BaseLayout >
     )

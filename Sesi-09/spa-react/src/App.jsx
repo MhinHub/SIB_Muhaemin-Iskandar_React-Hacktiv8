@@ -9,6 +9,8 @@ import Members from "./pages/Members/Members";
 import Member from "./pages/Members/Member";
 import Items from "./pages/Items/Items";
 import ItemDetail from "./pages/Items/ItemDetail";
+import ProtectedRoute from "./components/ProtectedRoute";
+import Login from "./pages/Login/Login";
 
 function App() {
   return (
@@ -24,9 +26,10 @@ function App() {
           <Route path="/members" element={<Members />}>
             <Route path=":memberName" element={<Member />} />
           </Route>
-          <Route path="/items" element={<Items />} >
+          <Route path="/items" element={<ProtectedRoute><Items /></ProtectedRoute>} >
             <Route path=":itemId" element={<ItemDetail />} />
           </Route>
+          <Route path="/login" element={<Login />} />
         </Routes>
       </Router>
     </div>
