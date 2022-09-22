@@ -17,6 +17,7 @@ const reducer = (state = initialState, action) => {
     }
 }
 
+
 let store = createStore(reducer)
 
 store.subscribe(() => console.log(store.getState()))

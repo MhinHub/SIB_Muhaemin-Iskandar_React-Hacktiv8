@@ -4,11 +4,11 @@ import { increment, decrement, incrementByAmount } from "./counterSlice";
 
 class CounterClass extends Component {
     state = {
-        incrementAmount: 0
+        incrementAmount: Number(0)
     }
 
     setIncrementAmount = (v) => {
-        this.setState({ incrementAmount: Number(v) || 0 });
+        this.setState({ incrementAmount: new Number(v)})
     }
 
     render() {
