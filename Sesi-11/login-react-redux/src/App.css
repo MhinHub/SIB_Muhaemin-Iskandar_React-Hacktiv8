@@ -1,3 +1,49 @@
+form[name="loginForm"] {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  padding: 10px;
+}
+
+.from-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+label {
+  min-width: 100px;
+  width: 100px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+input[type="email"], input[type="password"] {
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 20px;
+  padding: 3px;
+  flex-grow: 1;
+  font-size: 25px;
+}
+
+input[type="submit"] {
+  align-self: flex-end;
+  width: 100px;
+  height: 40px;
+  border: 3px solid lightgray;
+  font-size: 20px;
+  padding: 3px;
+  background: whitesmoke;
+}
+
+.message {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: right;
+}
+
 .App {
   text-align: center;
 }
@@ -32,6 +78,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
