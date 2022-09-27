@@ -1,14 +1,20 @@
 form[name="loginForm"] {
   display: flex;
   flex-direction: column;
+  justify-content: start; 
+  justify-items: start;
+  margin: 10px auto;
   width: 450px;
   padding: 10px;
 }
 
-.from-group {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 10px;
+.form-g-col {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 10px;
 }
 
 label {
@@ -24,7 +30,7 @@ input[type="email"], input[type="password"] {
   font-size: 20px;
   padding: 3px;
   flex-grow: 1;
-  font-size: 25px;
+  margin-left: 5px;
 }
 
 input[type="submit"] {

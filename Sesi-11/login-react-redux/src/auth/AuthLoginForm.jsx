@@ -25,12 +25,12 @@ const AuthLoginForm = () => {
     return (
         <form name="loginForm" onSubmit={doSubmit}>
             <div className="form-g-col">
-                <div className="form-g">
+                <div>
                     <label> Email</label>
                     <input type="email" name="email" value={email} onChange={emailChangeHandler} autoComplete="on"/>
                 </div>
 
-                <div className="form-g">
+                <div>
                     <label>Password</label>
                     <input type="password" name="password" value={password} onChange={passwordChangeHandler} autoComplete="on"/>
                 </div>
@@ -40,8 +40,8 @@ const AuthLoginForm = () => {
 
             <div className="message">
                 {authState.isLoginPending && <div>Please wait...</div>}
-                {authState.isLoginSuccess && <div>Login success</div>}
-                {authState.errorMessage && <div>{authState.errorMessage}</div>}
+                {authState.isLoginSuccess && <div style={{color: "green"}} >Login success</div>}
+                {authState.errorMessage && <div style={{color: "red"}}>{authState.errorMessage}</div>}
             </div>
         </form>
     )

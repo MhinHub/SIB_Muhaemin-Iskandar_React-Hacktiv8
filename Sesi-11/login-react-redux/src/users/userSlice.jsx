@@ -18,7 +18,7 @@ export const callLoginApi = (email, password) => {
     })
 }
 
-export const authLoginAPI = createAsyncThunk('auth/login', async (email, password) => {
+export const authLoginAPI = createAsyncThunk('auth/login', async ({email, password}) => {
     try {
         const response = await callLoginApi(email, password);
         return response.email;
@@ -35,6 +35,8 @@ const userSlice = createSlice({
         builder
             .addCase(authLoginAPI.pending, (state) => {
                 state.isLoginPending = true;
+                state.isLoginSuccess = false;
+                state.errorMessage = '';
             })
             .addCase(authLoginAPI.fulfilled, (state, action) => {
                 console.log('fulfilled', action);
