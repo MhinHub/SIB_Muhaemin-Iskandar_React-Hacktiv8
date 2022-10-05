@@ -21,17 +21,13 @@ test("renders learn react link", () => {
     // Klik button
     fireEvent.click(btn);
 
-    // mencari tombol tertentu
-    // pada halamam yang muncul karena klik tombol
-    // pastikan button kita memiliki role ="button
-
-    const user = async () =>
-        await waitFor(
-            () => {
-                return screen.findByAltText("Leanne Graham");
-            },
-            { timeout: 5000 }
-        );
+    // const user = async () =>
+    //     await waitFor(
+    //         () => {
+    //             return screen.findByAltText("Leanne Graham");
+    //         },
+    //         { timeout: 5000 }
+    //     );
 
 
     // user().then((res) => {
