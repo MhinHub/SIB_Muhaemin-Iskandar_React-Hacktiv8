@@ -61,7 +61,7 @@ const Styling06 = () => {
   return (
     <>
       <View style={styles.header}>
-        <Text style={styles.txtHeader}>Chat</Text>
+        <Text style={styles.txtHeader}>Customer</Text>
       </View>
 
       <FlatList

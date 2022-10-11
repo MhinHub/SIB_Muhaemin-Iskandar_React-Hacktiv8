@@ -23,7 +23,7 @@ const Styling01 = () => {
       </View>
       <TextInput
         style={{ height: 40, borderColor: "gray", borderWidth: 1 }}
-        defaultValue="You can type in meee"
+        defaultValue="Try to type some words here"
       />
     </ScrollView>
   );
