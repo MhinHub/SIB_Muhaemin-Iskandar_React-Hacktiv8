@@ -2,40 +2,40 @@ import { useEffect, useState } from 'react';
 
 //* Dengan SSR
 
-// export default function Home({ users }) {
-//   return (
-//     <>
-//       <h1>SSR</h1>
-//       <table>
-//         <thead>
-//           <tr>
-//             <th>Name</th>
-//             <th>Username</th>
-//             <th>Email</th>
-//           </tr>
-//         </thead>
-//         <tbody>
-//           {users?.map((user) => (
-//             <tr key={user.id}>
-//               <td>{user.name}</td>
-//               <td>{user.username}</td>
-//               <td>{user.email}</td>
-//             </tr>
-//           ))}
-//         </tbody>
-//       </table>
-//     </>
-//   )
-// }
+export default function Home({ users }) {
+  return (
+    <>
+      <h1>SSR</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          {users?.map((user) => (
+            <tr key={user.id}>
+              <td>{user.name}</td>
+              <td>{user.username}</td>
+              <td>{user.email}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
+  )
+}
 
-// export async function getServerSideProps() {
-//   const res = await fetch('https://jsonplaceholder.typicode.com/users');
-//   const users = await res.json();
+export async function getServerSideProps() {
+  const res = await fetch('https://jsonplaceholder.typicode.com/users');
+  const users = await res.json();
 
-//   return {
-//     props: { users }
-//   }
-// }
+  return {
+    props: { users }
+  }
+}
 
 
 
@@ -43,38 +43,38 @@ import { useEffect, useState } from 'react';
 
 //* Tanpa SSR
 
-export default function Home() {
-  const [users, setUsers] = useState([]);
+// export default function Home() {
+//   const [users, setUsers] = useState([]);
 
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then((res) => res.json())
-      .then((data) => setUsers(data));
-  }, []);
+//   useEffect(() => {
+//     fetch('https://jsonplaceholder.typicode.com/users')
+//       .then((res) => res.json())
+//       .then((data) => setUsers(data));
+//   }, []);
 
-  return (
-    <>
-      <h1>No SSR</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Username</th>
-          <th>Email</th>
-        </tr>
-      </thead>
-      <tbody>
-        {users.map((user) => (
-          <tr key={user.id}>
-            <td>{user.name}</td>
-            <td>{user.username}</td>
-            <td>{user.email}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-    </>
-  );
-}
+//   return (
+//     <>
+//       <h1>No SSR</h1>
+//     <table>
+//       <thead>
+//         <tr>
+//           <th>Name</th>
+//           <th>Username</th>
+//           <th>Email</th>
+//         </tr>
+//       </thead>
+//       <tbody>
+//         {users.map((user) => (
+//           <tr key={user.id}>
+//             <td>{user.name}</td>
+//             <td>{user.username}</td>
+//             <td>{user.email}</td>
+//           </tr>
+//         ))}
+//       </tbody>
+//     </table>
+//     </>
+//   );
+// }
 
 
